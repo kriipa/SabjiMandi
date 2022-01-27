@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.wholepg{
+    height: 100vh;
+    /* border: black; */
+    background-color: #e33e5e;
+}
+
+
+.container{
+    /* height: 100vh; */
+    /* padding-top: 340px; */
+    /* margin-top: 280px; */
+}
+
+.alreg{
+    /* text-align: right; */
+    text-align:center;
+    margin-right: 180px;
+}
+
+
+
+.content{
+    flex-wrap: wrap;
+}
+
+
+
+/* content css */
+.row{
+    height: 100%;
+    /* border-radius: 30px; */
+    /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); */
+}
+
+.info{
+    margin-top: 100px;
+}
+
+.col{
+    height: 1250px;
+}
+
+.inputs, .img-content{
+    background-color: rgb(255, 255, 255);
+    /* border-radius: 15px; */
+    border: none;
+    /* height: 130%; */
+    box-shadow: -19px 20px 9px 1px rgba(0,0,0,0.3);
+-webkit-box-shadow: -19px 20px 9px 1px rgba(0,0,0,0.3);
+-moz-box-shadow: -19px 20px 9px 1px rgba(0,0,0,0.3);
+}
+
+.first{
+    display: inline;
+    display: flex;
+    position: relative;
+}
+
+
+.input{
+    /* height: 50px; */
+    width: 84%;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: rgba(112, 91, 91, 0.4);
+    /* border: none; */
+    /* box-shadow: 4px 5px 8px -4px rgba(0,0,0,0.47); */
+    -webkit-box-shadow: 4px 5px 8px -4px rgba(0,0,0,0.47);
+    -moz-box-shadow: 4px 5px 8px -4px rgba(0,0,0,0.47);
+}
+
+.btn{
+    height: 50px;
+    /* width: 84%; */
+    box-shadow: 4px 5px 8px -4px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 4px 5px 8px -4px rgba(0,0,0,0.47);
+    -moz-box-shadow: 4px 5px 8px -4px rgba(0,0,0,0.47);
+    background-image: linear-gradient(to left bottom, #f4d2dc, #ffc3c4, #ffbb98, #ffbf5f, #f4cd12 100%);
+    margin-top: 50px; 
+    
+    
+}
+
+/* 
+.reg a:hover{
+    background-color: burlywood;
+} */
+
+
+.img-content{
+    
+    background-image: url('/static/images/tomato.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+
+    /* width: 100%; */
+    /* filter: drop-shadow(2px 4px 8px #585858) */
+}
+
+.headName{
+    color: rgb(28, 15, 136);
+    /* padding-left: 100px; */
+    font-weight: 400 ;
+    /* margin-top: 100px; */
+    font-size: 60px;
+}

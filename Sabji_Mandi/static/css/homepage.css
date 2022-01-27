@@ -1,0 +1,237 @@
+#navbar {
+    overflow: hidden;
+    background-color: #dfe7e0;
+    padding: 40px 10px;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    filter: drop-shadow(1px 2px 4px  #585858);
+    /* box-shadow: 0 0 20px 7px rgba(2, 75, 12, 0.2); */
+}
+
+#navbar a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+/* #navbar #logo {
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.4s;
+} */
+
+.navbar-right{
+    
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: rgb(7, 116, 16);
+} 
+
+#navbar a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+#navbar-right {
+    float: right;
+} */
+
+
+
+@media screen and (max-width: 580px) {
+    #navbar {
+        padding: 20px 10px !important;
+    }
+
+    #navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    #navbar-right {
+        float: none;
+    }
+}
+
+
+/* BUTTON CSS */
+/* From cssbuttons.io */
+    .button {
+        display: inline-block;
+        padding: 12px 24px;
+        border: 1px solid #4f4f4f;
+        border-radius: 4px;
+        transition: all 0.2s ease-in;
+        position: relative;
+        overflow: hidden;
+        font-size: 19px;
+        color: black;
+        z-index: 1;
+    }
+    
+    .button:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) scaleY(1) scaleX(1.25);
+        top: 100%;
+        width: 140%;
+        height: 180%;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 50%;
+        display: block;
+        transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+        z-index: -1;
+    }
+    
+    .button:after {
+        content: "";
+        position: absolute;
+        left: 55%;
+        transform: translateX(-50%) scaleY(1) scaleX(1.45);
+        top: 180%;
+        width: 160%;
+        height: 190%;
+        background-color: #39bda7;
+        border-radius: 50%;
+        display: block;
+        transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+        z-index: -1;
+    }
+    
+    .button:hover {
+        color: #ffffff;
+        border: 1px solid #39bda7;
+    }
+    
+    .button:hover:before {
+        top: -35%;
+        background-color: #39bda7;
+        transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+    }
+    
+    .button:hover:after {
+        top: -45%;
+        background-color: #39bda7;
+        transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+    }
+
+/* NAVBAAR ENDS */
+
+
+.container{
+    
+    margin-top: 280px;
+}
+
+
+/* Homepage CSS */
+.card{
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.2);
+    height: 400px;
+    width: 300px;
+}
+
+.card-group{
+    
+}
+
+.content{
+    flex-wrap: wrap;
+}
+
+
+/* VIDEO SECTION CSS */
+
+
+
+
+/* FOOTER CSS */
+    .footer-basic {
+        padding:40px 0;
+        background-color:#ffffff;
+        color:#ffffff;
+        /* background-image: linear-gradient(to left top, #607e1c, #839c4d, #a7ba7c, #cbd9ab, #f0f9dc); */
+        /* background-image: linear-gradient(to right top, #0d4410, #366826, #5f8e3d, #8bb654, #bbde6d); */
+        background-image: linear-gradient(to right top, #0a340d, #275127, #426f42, #5f8f5f, #7db07d);
+    }
+    
+    .footer-basic ul {
+        padding:0;
+        list-style:none;
+        text-align:center;
+        font-size:18px;
+        line-height:1.6;
+        margin-bottom:0;
+    }
+    
+    .footer-basic li {
+        padding:0 10px;
+    }
+    
+    .footer-basic ul a {
+        color:inherit;
+        text-decoration:none;
+        opacity:0.8;
+    }
+    
+    .footer-basic ul a:hover {
+        opacity:1;
+    }
+    
+    .footer-basic .social {
+        text-align:center;
+        padding-bottom:25px;
+    }
+    
+    .footer-basic .social > a {
+        font-size:24px;
+        width:40px;
+        height:40px;
+        line-height:40px;
+        display:inline-block;
+        text-align:center;
+        border-radius:50%;
+        border:1px solid rgb(253, 252, 252);
+        margin:0 8px;
+        color:inherit;
+        opacity:0.75;
+    }
+    
+    .footer-basic .social > a:hover {
+        opacity:0.9;
+    }
+    
+    .footer-basic .copyright {
+        margin-top:15px;
+        text-align:center;
+        font-size:13px;
+        color:rgb(255, 255, 255);
+        margin-bottom:0;
+    }
+
+    .btn-footer {
+        color: grey;
+        text-decoration: none;
+        border: 1px solid;
+        border-radius: 43px;
+        font-size: 13px;
+        padding: 7px 30px;
+        line-height: 47px;
+    }
+    .btn-footer:hover {
+        
+        text-decoration: none;
+        
+}
