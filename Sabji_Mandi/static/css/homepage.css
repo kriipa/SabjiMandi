@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
 #navbar {
     overflow: hidden;
     background-color: #dfe7e0;
@@ -28,9 +34,6 @@
     transition: 0.4s;
 } */
 
-.navbar-right{
-    
-}
 
 #navbar a:hover {
     background-color: #ddd;
@@ -44,8 +47,17 @@
 
 #navbar-right {
     float: right;
-} */
+} 
 
+.btn-head {
+    color: rgb(184, 45, 45);
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 43px;
+    font-size: 13px;
+    padding: 7px 30px;
+    line-height: 47px;
+}
 
 
 @media screen and (max-width: 580px) {
@@ -64,95 +76,89 @@
     }
 }
 
-
 /* BUTTON CSS */
-/* From cssbuttons.io */
-    .button {
-        display: inline-block;
-        padding: 12px 24px;
-        border: 1px solid #4f4f4f;
-        border-radius: 4px;
-        transition: all 0.2s ease-in;
-        position: relative;
-        overflow: hidden;
-        font-size: 19px;
-        color: black;
-        z-index: 1;
-    }
-    
-    .button:before {
-        content: "";
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%) scaleY(1) scaleX(1.25);
-        top: 100%;
-        width: 140%;
-        height: 180%;
-        background-color: rgba(0, 0, 0, 0.05);
-        border-radius: 50%;
-        display: block;
-        transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-        z-index: -1;
-    }
-    
-    .button:after {
-        content: "";
-        position: absolute;
-        left: 55%;
-        transform: translateX(-50%) scaleY(1) scaleX(1.45);
-        top: 180%;
-        width: 160%;
-        height: 190%;
-        background-color: #39bda7;
-        border-radius: 50%;
-        display: block;
-        transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-        z-index: -1;
-    }
-    
-    .button:hover {
-        color: #ffffff;
-        border: 1px solid #39bda7;
-    }
-    
-    .button:hover:before {
-        top: -35%;
-        background-color: #39bda7;
-        transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-    }
-    
-    .button:hover:after {
-        top: -45%;
-        background-color: #39bda7;
-        transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-    }
+.button {
+    /* display: inline-block; */
+    /* padding: 12px 24px; */
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    /* font-size: 13px; */
+    color: black;
+    z-index: 1;
+}
+
+.button:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    /* width: 170%;
+    height: 100%; */
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    /* display: block; */
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #39bda7;
+    border-radius: 50%;
+    /* display: block; */
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button:hover {
+    color: #ffffff;
+    border: 1px solid #39bda7;
+}
+
+.button:hover:before {
+    top: -35%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button:hover:after {
+    top: -45%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+
 
 /* NAVBAAR ENDS */
 
 
-.container{
-    
-    margin-top: 280px;
+
+
+/* CONTAINER CSS STARTS */
+.home{
+    background-color: #ffffff;
+    margin-top: 200px;
 }
 
+.card {
+    border: none;
+    background: rgb(231, 237, 245);
+    border-radius: 40px 0 40px 0;
+    box-shadow: 15px 15px 30px #bebebe,
+                -15px -15px 30px #ffffff;
+    }
 
-/* Homepage CSS */
-.card{
-    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.2);
-    height: 400px;
-    width: 300px;
-}
-
-.card-group{
-    
-}
-
-.content{
-    flex-wrap: wrap;
-}
-
-
-/* VIDEO SECTION CSS */
+/* CONTAINER CSS STARTS */
 
 
 
