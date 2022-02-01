@@ -4,17 +4,115 @@
 
 <!-- CONTACT US PAGE -->
 
-<section >
-    <div class="container-fluid bg-dark">
-        
-        <div class="container bg-warning">
-            <div class="container col-lg-12 bg-light row">
-                
+<section>
+    <div class="container-fluid  py-5">
+
+        <div class="container  ">
+
+            <div class="container col-lg-12 bg-light row w-100 h-50 mx-1">
+                <div class="heading " style="text-align: center;">
+                    <div class="mt-5">
+                        <h1>Contact SabjiMandi</h1>
+                    </div>
+
+                    <div class="mt-5">
+                        <h6>Get in touch with us</h6>
+                    </div>
+                </div>
+
+
+                <div class="contact-imgs">
+                    <!-- <div class="col-lg-12"> -->
+
+                    <div class="row categoryline">
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 text-center p-3 ">
+                            <figure>
+                                <!-- <img src="images/cat2.png" class="cat " alt="rounded" height="150" width=150 /> -->
+                                <div class="imgA">
+                                    <i class="fas fa-envelope img" style="font-size: 54px;"></i>
+                                    <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                                        Popover on top
+                                    </button>
+                                    
+                                </div>
+                            </figure>
+                            <span> Email address </span>
+                        </div>
+
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 text-center p-3 ">
+                            <figure>
+                                <!-- <img src="images/cat2.png" class="cat " alt="rounded" height="150" width=150 /> -->
+                                <i class="fas fa-phone-alt img" style="font-size: 54px;"></i>
+                            </figure>
+                            <span> Phone Number </span>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 text-center p-3 ">
+                            <figure>
+                                <!-- <img src="images/cat2.png" class="cat " alt="rounded" height="150" width=150 /> -->
+                                <i class="fab fa-facebook-f img" style="font-size: 54px;"></i>
+                            </figure>
+                            <span> Facebook </span>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 text-center p-3 ">
+                            <figure>
+                                <!-- <img src="images/cat2.png" class="cat " alt="rounded" height="150" width=150 /> -->
+                                <i class="fab fa-twitter img" style="font-size: 54px;"></i>
+                            </figure>
+                            <span> Twitter </span>
+                        </div>
+
+                    </div>
+                    <!-- </div> -->
+                </div>
+
             </div>
+
+            <div class="col col-lg-12  row w-100 h-50 mx-1" style="padding-top: 0%; margin-top: 27px; ">
+
+                <!-- for map -->
+                <div class=" col mapouter">
+                    <div class="gmap_canvas map"><iframe style=" border:5px black; border-radius: 15px;" width="703"
+                            height="450" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=kuleshwor&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                            frameborder="5px" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+                    </div>
+                </div>
+                <!-- for map ends-->
+
+                <div class="col  flex-column justify-content-center form mt-5" style="height: 450px; margin-left: 100px;" >
+                    <div class="sentence">
+                        <h3>
+                            want us to contact you?
+                        </h3>
+                    </div>
+                    <div class="col">
+                        <div class="">
+                            <input type="name" class="input-field mt-3" placeholder="Name">
+                        </div>
+                        <div class="">
+                            <input type="email" class="input-field mt-3" placeholder="phone no.">
+                        </div>
+                        <div class="">
+                            <input type="text" class="input-field mt-3" placeholder="Any message">
+                        </div>
+                        <div class=" col-5 pt-5">
+                            <button class="btn btn-lg "> Send</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
-    </div> 
+    </div>
 </section>
 
 
-{% endblock  %}
+{% endblock %}
+<!-- {% include 'footer/footer.html' %} -->

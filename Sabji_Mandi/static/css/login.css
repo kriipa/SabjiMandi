@@ -182,6 +182,7 @@ Black 900 */
 .btn{
     height: 70px;
     width: 100%;
+    border: 1px solid;
     border-radius: 15px;
 }
 

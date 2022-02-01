@@ -4,3 +4,33 @@
 .headN{
     margin-top: 200px;
 } */
+
+/* .categoryline img:hover{
+    transform: scale(1.5);
+    animation-timing-function: ease-in;
+}
+
+.imga{
+    border:1px solid rgb(2, 2, 2);
+    border-radius:50%;
+
+} */
+
+.input-field {
+    border: 0;
+    border-bottom: 4px solid #0e8360;
+    font-size: 18px;
+    color: black;
+    font-weight: 200;
+    box-shadow: 0px 17px 13px -11px rgba(30, 30, 60, 0.45);
+}
+
+.map{
+    box-shadow: 0px 17px 13px -11px rgba(30, 30, 60, 0.45);
+}
+
+.input-field:focus {
+    border: none;
+    outline: none;
+    border-bottom: 4px solid #ee2929;
+}
