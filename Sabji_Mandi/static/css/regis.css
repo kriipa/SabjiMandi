@@ -6,17 +6,17 @@
 
 
 .wholepg{
-    height: 100vh;
+    height: 105vh;
     /* border: black; */
     background-color: #e33e5e;
 }
 
 
-.container{
-    /* height: 100vh; */
+/* .register-content{ */
+    /* height: 100%;  */
     /* padding-top: 340px; */
     /* margin-top: 280px; */
-}
+/* } */
 
 .alreg{
     /* text-align: right; */
@@ -33,19 +33,17 @@
 
 
 /* content css */
-.row{
+/* .register-row{
     height: 100%;
-    /* border-radius: 30px; */
-    /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); */
-}
+} */
 
 .info{
     margin-top: 100px;
 }
 
-.col{
+/* .col{
     height: 1250px;
-}
+} */
 
 .inputs, .img-content{
     background-color: rgb(255, 255, 255);
@@ -93,9 +91,7 @@
     background-color: burlywood;
 } */
 
-
-.img-content{
-    
+.img-content{   
     background-image: url('/static/images/tomato.jpg');
     background-position: center;
     background-size: cover;

@@ -1,0 +1,27 @@
+.card-item {
+    border: none;
+    background: rgb(231, 237, 245);
+    border-radius: 40px 0 40px 0;
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #ffffff;    
+}
+
+/* .product{
+    border: none;
+    background: rgb(231, 237, 245);
+    border-radius: 40px 0 40px 0;
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #ffffff;    
+    transition: transform .3s;
+} */
+
+.product :hover{
+    transform: translateX(-15px);
+    transition: transform .3s;
+}
+
+
+img.card-img-top {
+    border-radius: 40px 0px 0px 0px;
+}
+

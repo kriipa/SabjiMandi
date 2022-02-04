@@ -9,26 +9,84 @@
     <link href="/static/css/contact.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/588548ae49.js" crossorigin="anonymous"></script>
     <script src="/static/js/homepage.js"></script>
+    <link href="/static/css/dashboard.css" rel="stylesheet">
+    <link href="/static/css/footer.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <title> SABJIMANDI</title>
 </head>
 
 <body>
-<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">              
-            <img src="/static/images/final.png" alt="" width="80" height="70"  >
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
+    <!-- <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/static/images/final.png" alt="" width="80" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <a class="nav-item nav-link pt-4" href="/">Home </a>
-            <a class="nav-item nav-link pt-4" href="#">Features</a>
-            {% comment %} <a class="nav-item nav-link" href="login/">Signup</a> {% endcomment %}
-            <a href="login/"  class="button nav-item nav-link px-4"> <span> Sign In </span> </a>
-        
+            <div class="navbar-nav">
+                <a class="nav-item nav-link pt-4" href="/">Home </a>
+                <a class="nav-item nav-link pt-4" href="#">Features</a>
+
+                <div class="nav-item nav-link pt-4 dropdown">
+                    <a class="btnss btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown link
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                {% comment %} <a class="nav-item nav-link" href="login/">Signup</a> {% endcomment %}
+                <a href="login/" class="button nav-item nav-link pt-4"> Login </a>
+
+            </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/static/images/final.png" alt="" width="80" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5" style="align-items: center; ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown mx-5">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Vegetable</a></li>
+                            <li><a class="dropdown-item" href="#">Fruits</a></li>
+                            <li><a class="dropdown-item" href="#">Spices</a></li>
+                        </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact us</a>
+                        </li>
+                        <div class="text-align-end" style="margin-left: 440px;"> 
+                            <li class="nav-item mx-5">
+                                <a href="login/" class="button nav-link py-2"> Sign In  </a>
+                            </li>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-        </div>
-</nav>
+    </nav>

@@ -1,50 +1,38 @@
 <!-- FOOTER STARTS FROM HERE -->
-<section>
-<div class="footer-basic">
-    <footer>
-        <div class="social">
-            <a href="#"><i class="fas fa-envelope"></i></a>
-            <a href="#"><i class="fas fa-phone-alt"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></i></a>
+<footer class="container-fluid footer-content">
+    <div class="row g-0 pt-4">
+        <div class="col-lg-12 d-flex justify-content-center social-icons pt-1">
+            <a href="#" class="mx-sm-2"><i class="fas fa-envelope"></i></a>
+            <a href="#" class="mx-sm-2"><i class="fas fa-phone-alt"></i></a>
+            <a href="#" class="mx-sm-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="mx-sm-2"><i class="fab fa-facebook-f"></i></a>
         </div>
-        
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Home</a></li>
-            <li class="list-inline-item"><a href="#">Services</a></li>
-            <li class="list-inline-item"><a href="#">About</a></li>
-            <li class="list-inline-item"><a href="#">Terms</a></li>
-            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-            <li> <a href="#" class="btn-footer"> Contact Us</a> </li>
-            
-        </ul>
+        <div class="col-lg-12 d-flex justify-content-center pt-3">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="footer-link mx-lg-2">Home</a></li>
+                <li class="list-inline-item"><a href="#" class="footer-link mx-lg-2">Services</a></li>
+                <li class="list-inline-item"><a href="#" class="footer-link mx-lg-2">About</a></li>
+                <li class="list-inline-item"><a href="#" class="footer-link mx-lg-2">Terms</a></li>
+                <li class="list-inline-item"><a href="#" class="footer-link mx-lg-2">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-12 d-flex justify-content-center">
+            <a href="#" class="btn-footer px-5 py-2">Contact Us</a>
+        </div>
+        <div class="col-lg-12 d-flex pt-3 pb-4 justify-content-center">
+            <p class="copyright">SABJI MANDI &copy; 2018</p>
+        </div>
+    </div>
+</footer>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
-        <p class="copyright">SABJI MANDI © 2018</p>
-    </footer>
-</div>
-</section>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <script>
-
-    AOS.init();
-
-    AOS({
-
-        duration:1200,
-
-        offset:300  
-
-    })
-
+    $(function () {
+        // Handler for .ready() called.       
+        $('.popovers').popover();
+    });
 </script>

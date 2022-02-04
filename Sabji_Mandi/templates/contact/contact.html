@@ -4,16 +4,17 @@
 
 <!-- CONTACT US PAGE -->
 
+
 <section>
-    <div class="container-fluid  py-5">
+    <div class="container-fluid  py-5 mt-5">
 
-        <div class="container  ">
+        <div class="container pt-5">
 
-            <div class="container col-lg-12 bg-light row w-100 h-50 mx-1">
+            <div class="container col-lg-12 bg-light row w-100 h-50 mx-1 pt-4">
                 <div class="heading " style="text-align: center;">
-                    <div class="mt-5">
-                        <h1>Contact SabjiMandi</h1>
-                    </div>
+                    <div class="mt-5 ">
+                        <h1 class="headN">Contact SabjiMandi</h1>
+                    </div> 
 
                     <div class="mt-5">
                         <h6>Get in touch with us</h6>
@@ -26,41 +27,31 @@
 
                     <div class="row categoryline">
 
-                        <div class="col-lg-3 col-md-6 col-sm-12 text-center p-3 ">
-                            <figure>
-                                <!-- <img src="images/cat2.png" class="cat " alt="rounded" height="150" width=150 /> -->
-                                <div class="imgA">
-                                    <i class="fas fa-envelope img" style="font-size: 54px;"></i>
-                                    <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
-                                        Popover on top
-                                    </button>
-                                    
-                                </div>
+                        <div class="col-lg-3 col-md-6 text-center p-3 ">
+                            <figure>             
+                                <i class="fas fa-envelope img popovers" style="font-size: 54px;cursor: pointer;" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="SabjiMandi@gmail.com"></i>                       
                             </figure>
                             <span> Email address </span>
                         </div>
 
 
-                        <div class="col-lg-3 col-md-6 col-sm-12 text-center p-3 ">
+                        <div class="col-lg-3 col-md-6  text-center p-3">
                             <figure>
-                                <!-- <img src="images/cat2.png" class="cat " alt="rounded" height="150" width=150 /> -->
-                                <i class="fas fa-phone-alt img" style="font-size: 54px;"></i>
+                                <i class="fas fa-phone-alt img popovers" style="font-size: 54px;cursor: pointer;" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="01-4062384"></i>
                             </figure>
                             <span> Phone Number </span>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 col-sm-12 text-center p-3 ">
+                        <div class="col-lg-3 col-md-6 text-center p-3 ">
                             <figure>
-                                <!-- <img src="images/cat2.png" class="cat " alt="rounded" height="150" width=150 /> -->
-                                <i class="fab fa-facebook-f img" style="font-size: 54px;"></i>
+                                <i class="fab fa-facebook-f img popovers" style="font-size: 54px;cursor: pointer;" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="sabji_mandi@gmail.com"></i>
                             </figure>
                             <span> Facebook </span>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 col-sm-12 text-center p-3 ">
+                        <div class="col-lg-3 col-md-6 text-center p-3 ">
                             <figure>
-                                <!-- <img src="images/cat2.png" class="cat " alt="rounded" height="150" width=150 /> -->
-                                <i class="fab fa-twitter img" style="font-size: 54px;"></i>
+                                <i class="fab fa-twitter img popovers" style="font-size: 54px;cursor: pointer;" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="@sabjimandi"></i>
                             </figure>
                             <span> Twitter </span>
                         </div>
@@ -101,7 +92,13 @@
                             <input type="text" class="input-field mt-3" placeholder="Any message">
                         </div>
                         <div class=" col-5 pt-5">
-                            <button class="btn btn-lg "> Send</button>
+                            <button class="btns ">
+                                Send
+                                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                                    <path d="M1,5 L11,5"></path>
+                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -112,6 +109,11 @@
 
     </div>
 </section>
+<script>
+    $(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
 
 
 {% endblock %}

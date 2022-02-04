@@ -29,3 +29,10 @@ def login(request):
 
 def contact(request):
     return render(request, 'contact/contact.html')
+
+def viewcart(request):
+    return render(request, 'viewCart/viewcart.html')
+
+
+def about(request):
+    return render(request, 'about/about.html')
