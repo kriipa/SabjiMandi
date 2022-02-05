@@ -1,17 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AboutUs</title>
-</head>
-<body>
-    <Section>
-        <div class="container">
-            <img src="/static/images/login.png" alt="bg img" style="height: 550px; width: 1100px; align-items: center;">
-            <img src="/static/images/login-2.png" alt="" style="height: 550px; width: 1100px; align-items: center;">
+{% extends 'index.html' %}
+
+{% block content %}
+
+<Section class="container-fluid  h-100" style="margin-top: 200px; margin-bottom: 50px; ">
+    <div class="container ">
+        <!-- <div class="d-flex justify-content-center position-relative carousel slide carousel-inner" data-bs-ride="carousel">
+            
+            <img src="/static/images/login-2.png" class="position-absolute" alt=""
+                style="height: 570px; width: 1100px; z-index: 1;">
+
+            <div class="col position-absolute carousel-item active">
+                <img src="/static/images/bgabout1.jpg" alt=""
+                    style="height: 570px; width: 600px; border-radius: 270px; z-index: 4;">
+            </div>
+            <div class=" position-absolute carousel-item"> 
+                <img src="/static/images/bgabout2.jpg" alt=""
+                    style="height: 570px; width: 600px; border-radius: 270px;z-index:3;">
+            </div>
+            <!-- <div class="position-absolute carousel-item"> -->
+        <!-- <img src="/static/images/bgabout3.jpg" alt=""
+                style="height: 570px; width: 600px; border-radius: 270px;z-index:2;"> -->
+        <!-- </div> -->
+        <!-- </div>  -->
+
+        <div class="container d-flex justify-content-center aboutimg">
+
+            <div id="carouselExampleInterval" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel"
+                style="height: 570px; width: 600px; border-radius: 500px;">
+                <!-- <img src="/static/images/login-2.png" class="position-absolute top-0 " style="z-index: -1; height: 570px; width: 1100px; right: 20%;" alt=""> -->
+                <div class="carousel-inner position-inherit">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="/static/images/bgabout1.jpg" alt=""
+                            style="height: 570px; width: 600px; border-radius: 270px;">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="/static/images/bgabout2.jpg" alt=""
+                            style="height: 570px; width: 600px; border-radius: 270px;">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="/static/images/bgabout4.jpg" alt=""
+                            style="height: 570px; width: 600px; border-radius: 270px;">
+                    </div>
+
+                    <div class="col position-absolute top-0 " style="background-color: rgb(138, 101, 101, 0.4); z-index: 1;">
+                        <h1 class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assault</h1>
+                    </div>
+
+                </div>
+            </div>
         </div>
-    </Section>
-</body>
-</html>
+
+</Section>
+
+{% endblock %}
