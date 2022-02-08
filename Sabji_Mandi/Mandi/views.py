@@ -36,3 +36,6 @@ def viewcart(request):
 
 def about(request):
     return render(request, 'about/about.html')
+
+def homep(request):
+    return render(request, 'homepfirst/homepfirst.html')

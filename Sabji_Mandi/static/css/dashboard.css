@@ -6,16 +6,16 @@
         -15px -15px 30px #ffffff;    
 }
 
-/* .product{
+.products{
     border: none;
     background: rgb(231, 237, 245);
     border-radius: 40px 0 40px 0;
     box-shadow: 15px 15px 30px #bebebe,
         -15px -15px 30px #ffffff;    
     transition: transform .3s;
-} */
+} 
 
-.product :hover{
+.products:hover{
     transform: translateX(-15px);
     transition: transform .3s;
 }
