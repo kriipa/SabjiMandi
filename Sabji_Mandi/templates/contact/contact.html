@@ -81,18 +81,19 @@
                             want us to contact you?
                         </h3>
                     </div>
-                    <div class="col">
+                    <form class="col" action="" method="POST">
+                        {% csrf_token %}
                         <div class="">
-                            <input type="name" class="input-field mt-3" placeholder="Name">
+                            <input name="name" type="name" class="input-field mt-3" placeholder="Name">
                         </div>
                         <div class="">
-                            <input type="email" class="input-field mt-3" placeholder="phone no.">
+                            <input name="phone_no" type="number" class="input-field mt-3" placeholder="phone no.">
                         </div>
                         <div class="">
-                            <input type="text" class="input-field mt-3" placeholder="Any message">
+                            <input name="message" type="text" class="input-field mt-3" placeholder="Any message">
                         </div>
                         <div class=" col-5 pt-5">
-                            <button class="btns ">
+                            <button class="btns "  type="submit">
                                 Send
                                 <svg width="15px" height="10px" viewBox="0 0 13 10">
                                     <path d="M1,5 L11,5"></path>
@@ -100,7 +101,7 @@
                                 </svg>
                             </button>
                         </div>
-                    </div>
+                    </form>
                 </div>
 
             </div>

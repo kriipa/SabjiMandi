@@ -13,7 +13,7 @@
 
 <body>
     <section class="form">
-        <div class="container-fluid formpg pt-5 mt-5" style=" height: 95vh; background-image: url('/static/images/formbg.jpg');
+        <div class="container-fluid formpg pt-5 mt-5" style=" min-height: Calc(112vh - 100px); background-image: url('/static/images/formbg.jpg');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;">
@@ -22,7 +22,7 @@
                 <form class="row g-3" method="POST" action="" enctype="multipart/form-data">
                     {% csrf_token %}
                     <div class="d-flex justify-content-center">
-                        <h3> ADD PROFILE </h3>
+                        <h3> ADD PRODUCT </h3>
                     </div>
                     <div class="col-md-6">
                         <label for="inputEmail4" class="form-label small">Product name</label>

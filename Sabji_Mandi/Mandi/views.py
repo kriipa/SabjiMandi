@@ -3,15 +3,25 @@ from django.shortcuts import render, redirect, HttpResponse
 from .forms import *
 from .models import *
 from django.contrib import messages
+from django.core.paginator import Paginator
 
 
 # Create your views here.
 
 def homepage(request):
+    veg = Products.objects.filter(product_desc='vegetables')
+    fruit = Products.objects.filter(product_desc='fruits')
+    spices = Products.objects.filter(product_desc='spices')
     username = request.session['username']
     user = Customer.objects.get(username = username)
 
-    return render(request, 'homepage.html', {'user':user})
+    if request.method == "POST":
+        contact = Contact_form(request.POST)
+        if contact.is_valid():
+            contact.save()
+            return redirect("/")
+
+    return render(request, 'homepage.html', {'user':user,'veg':veg,'fruit':fruit,'spices':spices})
 
 
 def register(request):
@@ -43,6 +53,11 @@ def login(request):
 
 
 def contact(request):
+    if request.method == "POST":
+        contact = Contact_form(request.POST)
+        if contact.is_valid():
+            contact.save()
+            return redirect("/")
     return render(request, 'contact/contact.html')
 
 def viewcart(request):
@@ -57,7 +72,18 @@ def logout(request):
     return redirect("/")
 
 def home(request):
-    return render(request, 'homepage.html')
+    veg = Products.objects.filter(product_desc='vegetables')
+    fruit = Products.objects.filter(product_desc='fruits')
+    spices = Products.objects.filter(product_desc='spices')
+
+
+    if request.method == "POST":
+        contact = Contact_form(request.POST)
+        if contact.is_valid():
+            contact.save()
+            return redirect("/")
+
+    return render(request, 'homepage.html',  {'veg':veg,'fruit':fruit,'spices':spices})
 
 def update(request, customer_id):
     user = Customer.objects.get(customer_id = customer_id)
@@ -67,4 +93,12 @@ def update(request, customer_id):
         return redirect("/login/")
     
     return render(request,'update/update_profile.html', {'user':user})
+
+def allproduct(request):
+    product = Products.objects.all()
+    paginator = Paginator(product, 8)
+    page = request.GET.get('page')
+    paged_product = paginator.get_page(page)
+
+    return render(request, 'product/allproduct.html', {'products':paged_product})
 

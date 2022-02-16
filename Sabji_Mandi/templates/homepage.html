@@ -12,157 +12,54 @@
             <div class="col-lg-12 pt-5 pb-4">
                 <h3>Vegetable</h3>
             </div>
+            {% for veg in veg|slice:'0:4'%}
             <div class="col-lg-3 col-md-6 mb-5 hello">
                 <div class="card-item ">
-                    <img src="/static/images/kurillo.png" class="card-img-top" alt="...">
+                    <img src="/static/media/{{veg.product_picture}}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h4 class="card-title">cauliflower(काउली)</h4>
-                        <h5 class="card-text py-5" style="text-align: center; color: crimson;"> Rs.350</h5>
+                        <h4 class="card-title">{{veg.product_name}}</h4>
+                        <h5 class="card-text py-5" style="text-align: center; color: crimson;"> Rs.{{veg.product_price}}</h5>
                         <div class="text-center">
-                            <span class="card-text cart">Add to cart</span>
+                            <span class="card-text cart">Buy Product</span>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-3 col-md-6 mb-5 hello">
-                <div class="card-item">
-                    <img src="/static/images/ghiraula.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">luffa(घीरौला)</h4>
-                        <h5 class="card-text py-5" style="text-align: center; color: crimson;"> Rs.350</h5>
-                        <div class="text-center">
-                            <span class="card-text cart">Add to cart</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5 product">
-                <div class="card-item">
-                    <img src="/static/images/ishkus.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">chayote(ईस्कुश)</h4>
-                        <h5 class="card-text py-5" style="text-align: center; color: crimson;"> Rs.350</h5>
-                        <div class="text-center">
-                            <span class="card-text cart">Add to cart</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 pb-4 mb-5 product">
-                <div class="card-item">
-                    <img src="/static/images/aalu.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">potato(आलु)</h4>
-                        <h5 class="card-text py-5" style="text-align: center; color: crimson;"> Rs.350</h5>
-                        <div class="text-center">
-                            <span class="card-text cart">Add to cart</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
             <div class="col-lg-12 pt-5 pb-4 product">
                 <h3>Fruits</h3>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5 product">
-                <div class="card-item">
-                    <img src="/static/images/grapes.png" class="card-img-top" alt="...">
+            {% for fruit in fruit|slice:'0:4'%}
+            <div class="col-lg-3 col-md-6 mb-5 hello">
+                <div class="card-item ">
+                    <img src="/static/media/{{fruit.product_picture}}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h4 class="card-title">luffa(घीरौला)</h4>
-                        <h5 class="card-text py-5" style="text-align: center; color: crimson;"> Rs.350</h5>
+                        <h4 class="card-title">{{fruit.product_name}}</h4>
+                        <h5 class="card-text py-5" style="text-align: center; color: crimson;"> Rs.{{fruit.product_price}}</h5>
                         <div class="text-center">
-                            <span class="card-text cart">Add to cart</span>
+                            <span class="card-text cart">Buy Product</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5 product">
-                <div class="card-item">
-                    <img src="/static/images/apple.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">luffa(घीरौला)</h4>
-                        <h5 class="card-text py-5" style="text-align: center; color: crimson;"> Rs.350</h5>
-                        <div class="text-center">
-                            <span class="card-text cart">Add to cart</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5 product">
-                <div class="card-item">
-                    <img src="/static/images/anaar.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">luffa(घीरौला)</h4>
-                        <h5 class="card-text py-5" style="text-align: center; color: crimson;"> Rs.350</h5>
-                        <div class="text-center">
-                            <span class="card-text cart">Add to cart</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 pb-4 mb-5 product">
-                <div class="card-item">
-                    <img src="/static/images/pineapple.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">luffa(घीरौला)</h4>
-                        <h5 class="card-text py-5" style="text-align: center; color: crimson;"> Rs.350</h5>
-                        <div class="text-center">
-                            <span class="card-text cart">Add to cart</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
             <div class="col-lg-12 pt-5 pb-4">
                 <h3>Spices</h3>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5 product">
-                <div class="card-item">
-                    <img src="/static/images/ginger.png" class="card-img-top" alt="...">
+            {% for spices in spices|slice:'0:4'%}
+            <div class="col-lg-3 col-md-6 mb-5 hello">
+                <div class="card-item ">
+                    <img src="/static/media/{{spices.product_picture}}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h4 class="card-title">luffa(घीरौला)</h4>
-                        <h5 class="card-text py-5" style="text-align: center; color: crimson;"> Rs.350</h5>
+                        <h4 class="card-title">{{spices.product_name}}</h4>
+                        <h5 class="card-text py-5" style="text-align: center; color: crimson;"> Rs.{{spices.product_price}}</h5>
                         <div class="text-center">
-                            <span class="card-text cart">Add to cart</span>
+                            <span class="card-text cart">Buy Product</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5 product">
-                <div class="card-item">
-                    <img src="/static/images/chilly.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">luffa(घीरौला)</h4>
-                        <h5 class="card-text py-5" style="text-align: center; color: crimson;"> Rs.350</h5>
-                        <div class="text-center">
-                            <span class="card-text cart">Add to cart</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5 mb-5 product">
-                <div class="card-item">
-                    <img src="/static/images/lasun.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">luffa(घीरौला)</h4>
-                        <h5 class="card-text py-5" style="text-align: center; color: crimson;"> Rs.350</h5>
-                        <div class="text-center">
-                            <span class="card-text cart">Add to cart</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 pb-5 mb-5 product">
-                <div class="card-item">
-                    <img src="/static/images/onion1.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">luffa(घीरौला)</h4>
-                        <h5 class="card-text py-5" style="text-align: center; color: crimson;"> Rs.350</h5>
-                        <div class="text-center">
-                            <span class="card-text cart">Add to cart</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
 
     </div>

@@ -72,7 +72,8 @@
                 </div>
                 <!-- for map ends-->
 
-                <div class="col  flex-column justify-content-center form mt-5" style="height: 450px; margin-left: 100px;" >
+                <form class="col  flex-column justify-content-center form mt-5" style="height: 450px; margin-left: 100px;" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
                     <div class="sentence">
                         <h3>
                             want us to contact you?
@@ -80,16 +81,16 @@
                     </div>
                     <div class="col">
                         <div class="">
-                            <input type="name" class="input-field mt-3" placeholder="Name">
+                            <input name="name" type="name" class="input-field mt-3" placeholder="Name">
                         </div>
                         <div class="">
-                            <input type="email" class="input-field mt-3" placeholder="phone no.">
+                            <input name="phone_no" type="number" class="input-field mt-3" placeholder="phone no.">
                         </div>
                         <div class="">
-                            <input type="text" class="input-field mt-3" placeholder="Any message">
+                            <input name="message" type="text" class="input-field mt-3" placeholder="Any message">
                         </div>
                         <div class=" col-5 pt-5">
-                            <button class="btns ">
+                            <button class="btns " type="submit">
                                 Send
                                 <svg width="15px" height="10px" viewBox="0 0 13 10">
                                     <path d="M1,5 L11,5"></path>
@@ -98,7 +99,7 @@
                             </button>
                         </div>
                     </div>
-                </div>
+                </form>
 
             </div>
 
