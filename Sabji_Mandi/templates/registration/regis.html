@@ -19,7 +19,7 @@
 
                     <!-- <h3 class="name pt-4 mx-5" >login</h3>
                                 <p class="sugges pt-3 mx-5 small"> login with your username and password </p> -->
-                    <form class="container register-content" method="POST" action="">
+                    <form class="container register-content" method="POST" action="" enctype="multipart/form-data">
                         {% csrf_token %}
                         <!-- <div class="form-row"> -->
                         <div class="form-row">
@@ -32,14 +32,14 @@
                         <div class="form-row first  ">
                             <div class="offset-1 py-3 col-lg-5">
                                 <label class="py-2">First Name</label>
-                                <input name="customer_fname" type="name" class="input py-3" placeholder="First Name">
+                                <input name="first_name" type="name" class="input py-3" placeholder="First Name">
                             </div>
                             <!-- <div class="col-lg-1">
 
                                             </div> -->
                             <div class="offset-1 py-3 col-lg-5 ">
                                 <label class="py-2">Last Name</label>
-                                <input name="customer_lname" type="name" class="input  py-3" placeholder="Last Name">
+                                <input name="last_name" type="name" class="input  py-3" placeholder="Last Name">
                             </div>
                         </div>
 

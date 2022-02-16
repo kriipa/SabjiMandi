@@ -1,0 +1,6 @@
+.formbg{
+    background-image: url('/static/images/formbg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

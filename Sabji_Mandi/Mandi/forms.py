@@ -1,8 +1,23 @@
-from pyexpat import model
+from dataclasses import fields
 from django import forms
 from .models import *
 
-class customerForm(forms.ModelForm):
+class Customer_form(forms.ModelForm):
     class Meta:
-        model = customer
-        fields = ('__all__')
+        model = Customer
+        fields = ("__all__")
+
+class Product_form(forms.ModelForm):
+    class Meta:
+        model = Products
+        fields = ("__all__")
+
+class Order_form(forms.ModelForm):
+    class Meta:
+        model = Order
+        fields = ("__all__")
+
+class Contact_form(forms.ModelForm):
+    class Meta:
+        model = Contact
+        fields = ("__all__")

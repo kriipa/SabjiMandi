@@ -1,4 +1,4 @@
-{% extends 'admin/base.html' %}
+{% extends 'admin/index.html' %}
 
 {% block content %}
 <div class="col-md-10">
@@ -6,47 +6,29 @@
             <thead>
                 <tr>
                     <th scope="col">Product ID</th>
-                    <th scope="col">Product Name</th>
-                    <th scope="col">Product Title</th>
-                    <th scope="col">Product Price</th>
                     <th scope="col">Product Image</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Product Price</th>
+                    <th scope="col">Product Desc</th>
                     <th scope="col"></th>
-
-
                 </tr>
             </thead>
             <tbody>
+                {% for product in product %}
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-
-                    <td>Edit / Delete</td>
-
+                    <th scope="row">{{product.product_id}}</th>
+                    <td><img height="100" width="100" src="/static/media/{{product.product_picture}}" alt=""></td>
+                    <td>{{product.product_name}}</td>
+                    <td>{{product.product_price}}</td>
+                    <td>{{product.product_desc}}</td>
+                    <td> <a href="/admin/edit/{{product.product_id}}" class="btn ms-lg-6">Edit</a> <a href="/admin/delete/{{product.product_id}}" class="btn ms-lg-6">Delete</a> </td>
                 </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-
-                    <td>Edit / Delete</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry the Bird</td>
-                    <td>Thornton</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-
-                    <td>Edit / Delete</td>
-                </tr>
+                {% endfor %}
             </tbody>
         </table>
-
+        <div class="col-lg-3">
+            <a href="/admin/addproduct/" class="btn btn-lg bg-warning"> Add Product</a>
+        </div>
     </div>
 </div>
 {% endblock %}

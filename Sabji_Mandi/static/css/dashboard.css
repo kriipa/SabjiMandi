@@ -6,7 +6,7 @@
         -15px -15px 30px #ffffff;    
 }
 
-.products{
+/* .hello{
     border: none;
     background: rgb(231, 237, 245);
     border-radius: 40px 0 40px 0;
@@ -15,10 +15,10 @@
     transition: transform .3s;
 } 
 
-.products:hover{
-    transform: translateX(-15px);
+.hello:hover{
+    transform: translateY(-15px);
     transition: transform .3s;
-}
+} */
 
 
 img.card-img-top {
