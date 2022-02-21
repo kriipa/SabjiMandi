@@ -2,15 +2,35 @@
 
 {% block content %}
 
-<div class = " container-fluid">
-{% include 'about/about.html' %}
+<div class=" container-fluid">
+    {% include 'about/about.html' %}
 </div>
 
+<div class="container">
+    <div class="row px-5 pt-5 text-center" >
+        <ul class="nav nav-pills ">
+            <li class="nav-item col-lg-4">
+                <a class="nav-link text-light" href="#veggies" style="border: 1px solid; border-radius: 15px; background-color: rgb(168, 185, 151);">Vegetables</a>
+            </li>
+            <li class="nav-item col-lg-4 ">
+                <a class="nav-link" href="#fruits" style="border: 1px solid; border-radius: 15px; color: rgb(168, 185, 151);">Fruits</a>
+            </li>
+            <li class="nav-item col-lg-4">
+                <a class="nav-link text-light" href="#spices" style="border: 1px solid; border-radius: 15px; background-color: rgb(168, 185, 151);">Spices</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
 <section class="container-fluid  mt-5">
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
+        tabindex="0"></div>
     <div class="container-fluid rounded">
         <div class="row mt-5">
             <div class="col-lg-12 pt-5 pb-4">
-                <h3>Vegetable</h3>
+                <h3 id="veggies">Vegetable</h3>
             </div>
             {% for veg in veg|slice:'0:4'%}
             <div class="col-lg-3 col-md-6 mb-5 hello">
@@ -18,16 +38,19 @@
                     <img src="/static/media/{{veg.product_picture}}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h4 class="card-title">{{veg.product_name}}</h4>
-                        <h5 class="card-text py-5" style="text-align: center; color: crimson;"> Rs.{{veg.product_price}}</h5>
-                        <div class="text-center">
-                            <span class="card-text cart">Buy Product</span>
-                        </div>
+                        <h5 class="card-text py-5" style="text-align: center; color: crimson;">
+                            Rs.{{veg.product_price}}</h5>
+                            <div class="text-center">
+                                <a href="/buypage/{{veg.product_id}}" class="btn"
+                                    style="height:50px; background-color:rgb(58, 155, 131);"><span class="text-light">Buy
+                                        Product</span></a>
+                            </div>
                     </div>
                 </div>
             </div>
             {% endfor %}
             <div class="col-lg-12 pt-5 pb-4 product">
-                <h3>Fruits</h3>
+                <h3 id="fruits">Fruits</h3>
             </div>
             {% for fruit in fruit|slice:'0:4'%}
             <div class="col-lg-3 col-md-6 mb-5 hello">
@@ -35,16 +58,19 @@
                     <img src="/static/media/{{fruit.product_picture}}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h4 class="card-title">{{fruit.product_name}}</h4>
-                        <h5 class="card-text py-5" style="text-align: center; color: crimson;"> Rs.{{fruit.product_price}}</h5>
-                        <div class="text-center">
-                            <span class="card-text cart">Buy Product</span>
-                        </div>
+                        <h5 class="card-text py-5" style="text-align: center; color: crimson;">
+                            Rs.{{fruit.product_price}}</h5>
+                            <div class="text-center">
+                                <a href="/buypage/{{fruit.product_id}}" class="btn"
+                                    style="height:50px; background-color:rgb(58, 155, 131);"><span class="text-light">Buy
+                                        Product</span></a>
+                            </div>
                     </div>
                 </div>
             </div>
             {% endfor %}
             <div class="col-lg-12 pt-5 pb-4">
-                <h3>Spices</h3>
+                <h3 id="spices">Spices</h3>
             </div>
             {% for spices in spices|slice:'0:4'%}
             <div class="col-lg-3 col-md-6 mb-5 hello">
@@ -52,10 +78,13 @@
                     <img src="/static/media/{{spices.product_picture}}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h4 class="card-title">{{spices.product_name}}</h4>
-                        <h5 class="card-text py-5" style="text-align: center; color: crimson;"> Rs.{{spices.product_price}}</h5>
-                        <div class="text-center">
-                            <span class="card-text cart">Buy Product</span>
-                        </div>
+                        <h5 class="card-text py-5" style="text-align: center; color: crimson;">
+                            Rs.{{spices.product_price}}</h5>
+                            <div class="text-center">
+                                <a href="/buypage/{{spices.product_id}}" class="btn"
+                                    style="height:50px; background-color:rgb(58, 155, 131);"><span class="text-light">Buy
+                                        Product</span></a>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -63,11 +92,12 @@
         </div>
 
     </div>
+    </div>
 
 </section>
 
 <div class="container-fluid">
-{% include 'delivery/delivery.html' %}
+    {% include 'delivery/delivery.html' %}
 </div>
 
 {% include 'contact/contactus.html' %}

@@ -14,6 +14,8 @@
                 <div class="heading " style="text-align: center;">
                     <div class="mt-5 ">
                         <h1 class="headN">Contact SabjiMandi</h1>
+                        {% include  'header/messages.html' %}
+
                     </div> 
 
                     <div class="mt-5">
@@ -62,11 +64,11 @@
 
             </div>
 
-            <div class="col col-lg-12  row w-100 h-50 mx-1" style="padding-top: 0%; margin-top: 27px; ">
+            <div class="row w-100 h-50 mx-lg-1" style="padding-top: 0%; margin-top: 27px; ">
 
                 <!-- for map -->
-                <div class=" col mapouter">
-                    <div class="gmap_canvas map"><iframe style=" border:5px black; border-radius: 15px;" width="703"
+                <div class="col-sm-6 mapouter">
+                    <div class="gmap_canvas map"><iframe style=" border:5px black; border-radius: 15px;" width="100%"
                             height="450" id="gmap_canvas"
                             src="https://maps.google.com/maps?q=kuleshwor&t=&z=11&ie=UTF8&iwloc=&output=embed"
                             frameborder="5px" scrolling="no" marginheight="0" marginwidth="0"></iframe>
@@ -75,34 +77,34 @@
                 </div>
                 <!-- for map ends-->
 
-                <div class="col  flex-column justify-content-center form mt-5" style="height: 450px; margin-left: 100px;" >
-                    <div class="sentence">
+                <form class="col  flex-column justify-content-center form mt-5" style="height: 450px; margin-left: 100px;" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="col-md-12 sentence">
                         <h3>
                             want us to contact you?
                         </h3>
                     </div>
-                    <form class="col" action="" method="POST">
-                        {% csrf_token %}
-                        <div class="">
-                            <input name="name" type="name" class="input-field mt-3" placeholder="Name">
+                    <div class="col-md-12">
+                        <div class="col-md-10">
+                            <input name="name" type="name" class="input-field mt-3" placeholder="Name" style="height: 50px; border-radius :8px; width:100%">
                         </div>
-                        <div class="">
-                            <input name="phone_no" type="number" class="input-field mt-3" placeholder="phone no.">
+                        <div class="col-md-10">
+                            <input name="phone_no" type="number" class="input-field mt-3" placeholder="phone no." style="height: 50px; border-radius :8px; width:100%">
                         </div>
-                        <div class="">
-                            <input name="message" type="text" class="input-field mt-3" placeholder="Any message">
+                        <div class="col-md-10">
+                            <input name="message" type="text" class="input-field mt-3" placeholder="Any message" style="height: 110px; border-radius :8px; width:100%">
                         </div>
-                        <div class=" col-5 pt-5">
-                            <button class="btns "  type="submit">
+                        <div class="col-sm-3 mt-3">
+                            <button class="btn btn-secondary" style="height:70%" type="submit">
                                 Send
-                                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                                <svg width="15px" height="8px" viewBox="0 0 13 10">
                                     <path d="M1,5 L11,5"></path>
                                     <polyline points="8 1 12 5 8 9"></polyline>
                                 </svg>
                             </button>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
 
             </div>
 

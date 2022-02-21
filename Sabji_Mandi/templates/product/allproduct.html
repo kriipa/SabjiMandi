@@ -15,7 +15,9 @@
                             Rs.{{product.product_price}}
                         </h5>
                         <div class="text-center">
-                            <span class="card-text cart">Buy Product</span>
+                            <a href="/buypage/{{product.product_id}}" class="btn"
+                                style="height:50px; background-color:rgb(58, 155, 131);"><span class="text-light">Buy
+                                    Product</span></a>
                         </div>
                     </div>
                 </div>
@@ -30,8 +32,7 @@
     <ul class="pagination">
         {% if products.has_previous %}
         <li class="page-item">
-            <a class="page-link" href="?page={{ products.previous_page_number }}"><i
-                    class="fa fa-angle-left"></i></a>
+            <a class="page-link" href="?page={{ products.previous_page_number }}"><i class="fa fa-angle-left"></i></a>
         </li>
         {% else %}
         <li class="page-item disabled">

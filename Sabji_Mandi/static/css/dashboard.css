@@ -3,7 +3,7 @@
     background: rgb(231, 237, 245);
     border-radius: 40px 0 40px 0;
     box-shadow: 15px 15px 30px #bebebe,
-        -15px -15px 30px #ffffff;    
+        -15px -15px 30px #ffffff;
 }
 
 /* .hello{
@@ -25,3 +25,23 @@ img.card-img-top {
     border-radius: 40px 0px 0px 0px;
 }
 
+
+
+.buy-btn {
+    border-radius: 15px;
+    height: 40px;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    /* width: 84%; */
+    box-shadow: 4px 5px 8px -4px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 4px 5px 8px -4px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 4px 5px 8px -4px rgba(0, 0, 0, 0.47);
+    background-image: linear-gradient(to left bottom, #f4d2dc, #ffc3c4, #ffbb98, #ffbf5f, #f4cd12 100%);
+    margin-top: 50px;
+
+}
+
+.buy-btn:hover {
+    color: black;
+}

@@ -1,54 +1,77 @@
-{% extends 'admin/base.html' %}
+    {% extends 'admin/base.html' %}
 
-{% block content %}
-<div class="col-md-10">
+    {% block content %}
+    <div class="col-md-10">
         <table class="table table-success table-striped table-hover mt-3">
             <thead>
                 <tr>
                     <th scope="col">Order ID</th>
+                    <th scope="col">Image</th>
                     <th scope="col">First Name</th>
                     <th scope="col">Last Name</th>
                     <th scope="col">Product Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone No.</th>
                     <th scope="col">Address</th>
+                    <th scope="col">Quantity</th>
                     <th scope="col">Product Price</th>
-                    <th scope="col"></th>
+                    <th scope="col">Delete</th>
+
 
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>Edit / Delete</td>
-
+                    <th scope="row">{{order.order_id}}</th>
+                    <td>{{order.customer_obj.first_name}}</td>
+                    <td>{{order.customer_obj.last_name}}</td>
+                    <td>{{order.product_obj.product_name}}</td>
+                    <td>{{order.customer_obj.email}}</td>
+                    <td>{{order.phone_no}}</td>
+                    <td>{{order.address}}</td>
+                    <td>{{order.quantity}}</td>
+                    <td>{{order.product_obj.price}}</td>
+                    <td><a href="/deleteorder/{{order.order_id}}" class="btn btn-danger">Delete</a></td>
                 </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
 
-                    <td>Edit / Delete</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry the Bird</td>
-                    <td>Thornton</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-
-                    <td>Edit / Delete</td>
-                </tr>
             </tbody>
         </table>
+        <nav aria-label="..." class="offset-sm-5 col-sm-5 pt-5">
+            {% if order.has_other_pages %}
+            <ul class="pagination">
+                {% if order.has_previous %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ order.previous_page_number }}"><i
+                            class="fa fa-angle-left"></i></a>
+                </li>
+                {% else %}
+                <li class="page-item disabled">
+                    <a class="page-link"><i class="fas fa-angle-left"></i></a>
+                </li>
+                {% endif %}
+
+                {% for i in order.paginator.page_range %}
+                {% if order.number == i %}
+                <li class="page-item active"><a class="page-link" href="#">{{i}}</a></li>
+                {% else %}
+                <li class="page-item"><a class="page-link" href="?page={{i}}">{{i}}</a></li>
+                {% endif %}
+                {% endfor %}
+
+                {% if order.has_next %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ order.next_page_number }}"><i class="fa fa-angle-right"></i></a>
+                </li>
+                {% else %}
+                <li class="page-item disabled">
+                    <a class="page-link"><i class="fas fa-angle-right"></i></a>
+                </li>
+                {% endif %}
+            </ul>
+            {% endif %}
+        </nav>
+        </div>
 
     </div>
-</div>
-{% endblock %}
+    </div>
+    {% endblock %}

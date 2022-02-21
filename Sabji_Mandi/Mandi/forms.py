@@ -15,7 +15,7 @@ class Product_form(forms.ModelForm):
 class Order_form(forms.ModelForm):
     class Meta:
         model = Order
-        fields = ("__all__")
+        fields = "__all__"
 
 class Contact_form(forms.ModelForm):
     class Meta:

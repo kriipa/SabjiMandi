@@ -10,7 +10,9 @@
                     <th scope="col">Product Name</th>
                     <th scope="col">Product Price</th>
                     <th scope="col">Product Desc</th>
-                    <th scope="col"></th>
+                    <th scope="col">Update</th>
+                    <th scope="col">Delete</th>
+
                 </tr>
             </thead>
             <tbody>
@@ -21,7 +23,8 @@
                     <td>{{product.product_name}}</td>
                     <td>{{product.product_price}}</td>
                     <td>{{product.product_desc}}</td>
-                    <td> <a href="/admin/edit/{{product.product_id}}" class="btn ms-lg-6">Edit</a> <a href="/admin/delete/{{product.product_id}}" class="btn ms-lg-6">Delete</a> </td>
+                    <td> <a href="/admin/edit/{{product.product_id}}" class="btn btn-warning">Edit</a></td>
+                    <td> <a href="/admin/delete/{{product.product_id}}" class="btn btn-danger">Delete</a></td>
                 </tr>
                 {% endfor %}
             </tbody>

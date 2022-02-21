@@ -1,0 +1,14 @@
+[
+    {
+        "model":"adminUser.AdminDb",
+        "fields": {
+            "user_id" : "1",
+            "username" : "root",
+            "email" : "root@root.com",
+            "password" : "root",
+            "is_admin" : "True",
+            "firstname":"rootuser",
+            "lastname":"rootuser"
+        }
+    }
+]
